@@ -8,7 +8,7 @@ const PromoLivraison = () => {
           {/* Left section with image */}
           <div className="w-full md:w-1/2 h-full">
             <img 
-              src="/livraison-j+2.jpg" 
+              src={`${process.env.PUBLIC_URL}/livraison-j+2.jpg`}
               alt="Équipe commerciale" 
               className="w-full h-full object-cover"
             />

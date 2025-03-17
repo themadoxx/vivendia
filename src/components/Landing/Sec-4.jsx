@@ -5,25 +5,25 @@ const ServicesSection = () => {
     {
       id: 1,
       title: "Tout en 1",
-      image: "/home-services.png",
+      image: `${process.env.PUBLIC_URL}/home-services.png`,
       selected: false
     },
     {
       id: 2,
       title: "Service client réactif",
-      image: "/home-services-2.png",
+      image: `${process.env.PUBLIC_URL}/home-services-2.png`,
       selected: false
     },
     {
       id: 3,
       title: "Suivi de vos commandes",
-      image: "/home-services-3.png",
+      image: `${process.env.PUBLIC_URL}/home-services-3.png`,
       selected: false
     },
     {
       id: 4,
       title: "Meilleurs prix du marché",
-      image: "/home-services-4.webp",
+      image: `${process.env.PUBLIC_URL}/home-services-4.webp`,
       selected: true
     }
   ];

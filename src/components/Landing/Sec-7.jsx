@@ -104,110 +104,110 @@ const BestSellersSection = () => {
     // 🥤 Boissons Non Alcoolisées
     {
       id: 1,
-      image: "/oasis-canette.png",
+      image: `${process.env.PUBLIC_URL}/oasis-canette.png`,
       title: "Oasis Tropical 33cl",
       brand: "OASIS",
       quantity: "(Pack de 12)",
     },
     {
       id: 2,
-      image: "/perrier-slim.png",
+      image: `${process.env.PUBLIC_URL}/perrier-slim.png`,
       title: "Perrier Slim 33cl",
       brand: "PERRIER",
       quantity: "(Pack de 24)",
     },
     {
       id: 3,
-      image: "/volvic-zest.png",
+      image: `${process.env.PUBLIC_URL}/volvic-zest.png`,
       title: "Volvic Zest Citron 50cl",
       brand: "VOLVIC",
       quantity: "(Pack de 12)",
     },
-  
+
     // 🍫 Confiseries & Snacks Sucrés
     {
       id: 4,
-      image: "/mars.png",
+      image: `${process.env.PUBLIC_URL}/mars.png`,
       title: "Mars Chocolat 51g",
       brand: "MARS",
       quantity: "(Carton de 24)",
     },
     {
       id: 5,
-      image: "/cookies-sensation.png",
+      image: `${process.env.PUBLIC_URL}/cookies-sensation.png`,
       title: "Milka Cookies Sensations",
       brand: "MILKA",
       quantity: "(Boîte de 12)",
     },
     {
       id: 6,
-      image: "/toblerone.webp",
+      image: `${process.env.PUBLIC_URL}/toblerone.webp`,
       title: "Toblerone 100g",
       brand: "TOBLERONE",
       quantity: "(Carton de 20)",
     },
-  
+
     // 🥨 Snacks Salés
     {
       id: 7,
-      image: "/doritos.png",
+      image: `${process.env.PUBLIC_URL}/doritos.png`,
       title: "Doritos Nacho Cheese",
       brand: "DORITOS",
       quantity: "(Carton de 10)",
     },
     {
       id: 8,
-      image: "/vico-popcorn.webp",
+      image: `${process.env.PUBLIC_URL}/vico-popcorn.webp`,
       title: "Popcorn Sucré",
       brand: "N/A",
       quantity: "(Carton de 10)",
     },
-  
+
     // 🌱 Produits Bio & Diététiques
     {
       id: 9,
-      image: "/gerble-sesame.png",
+      image: `${process.env.PUBLIC_URL}/gerble-sesame.png`,
       title: "Gerblé Biscuits Sésame",
       brand: "GERBLÉ",
       quantity: "(Boîte de 8)",
     },
     {
       id: 10,
-      image: "/quinoa-tomates.png",
+      image: `${process.env.PUBLIC_URL}/quinoa-tomates.png`,
       title: "Quinoa Tomates Olives",
       brand: "BIO SELECTION",
       quantity: "(Sachet de 500g)",
     },
-  
+
     // ☕ Café, Cappuccino & Boissons Chaudes
     {
       id: 11,
-      image: "/maxwell.webp",
+      image: `${process.env.PUBLIC_URL}/maxwell.webp`,
       title: "Café Maxwell House",
       brand: "MAXWELL HOUSE",
       quantity: "(Boîte de 1kg)",
     },
     {
       id: 12,
-      image: "/caprimo-caramel.png",
+      image: `${process.env.PUBLIC_URL}/caprimo-caramel.png`,
       title: "Cappuccino Caramel",
       brand: "CAPRIMO",
       quantity: "(Boîte de 1kg)",
     },
-  ];
+];
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-10">
         {/* Bannière promotionnelle - maintenant à la même taille qu'avant */}
         <div className="lg:col-span-1 text-left">
-          <PromoBanner 
-            title="Exclusive - Ideal for events, restaurants, and hotels"
-            subtitle="NOUVEAU DORITOS SWEET CHILI"
-            description="Available in several packaging"
-            buttonText="Découvrir"
-            image="/doritos-sweet-chili.png"
-          />
+        <PromoBanner 
+          title="Exclusive - Ideal for events, restaurants, and hotels"
+          subtitle="NOUVEAU DORITOS SWEET CHILI"
+          description="Available in several packaging"
+          buttonText="Découvrir"
+          image={`${process.env.PUBLIC_URL}/doritos-sweet-chili.png`}  
+        />
         </div>
         
         {/* Section des meilleures ventes - maintenant avec 3 colonnes au lieu de 2 */}

@@ -48,7 +48,7 @@ const VivendiaComponent = () => {
         <div className="flex flex-col items-center text-center space-y-4">
           <div className="bg-gray-100 p-4 rounded-lg w-full">
             <img 
-              src="/tech.jpg" 
+              src={`${process.env.PUBLIC_URL}/tech.jpg`}
               alt="Smart POS" 
               className="w-full h-32 object-cover object-center rounded"
             />
@@ -59,7 +59,7 @@ const VivendiaComponent = () => {
         <div className="flex flex-col items-center text-center space-y-4">
           <div className="bg-gray-100 p-4 rounded-lg w-full">
             <img 
-              src="/france-industrie.jpeg" 
+              src={`${process.env.PUBLIC_URL}/france-industrie.jpeg`}
               alt="Fabriqué en France" 
               className="w-full h-32 object-cover object-center rounded"
             />
@@ -70,7 +70,7 @@ const VivendiaComponent = () => {
         <div className="flex flex-col items-center text-center space-y-4">
           <div className="bg-gray-100 p-4 rounded-lg w-full">
             <img 
-              src="/photo-distri.webp" 
+              src={`${process.env.PUBLIC_URL}/photo-distri.webp`}
               alt="Garantie à vie" 
               className="w-full h-32 object-cover object-center rounded"
             />

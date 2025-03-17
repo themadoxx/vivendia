@@ -75,61 +75,61 @@ const ProductCatalogue = () => {
   const featuredProducts = [
     {
       id: 1,
-      image: "/Monster-Energy.png",
+      image: `${process.env.PUBLIC_URL}/Monster-Energy.png`,
       title: "Monster Energy Original",
       brand: "MONSTER",
       quantity: "50cl",
     },
     {
       id: 2,
-      image: "/Coca-Cola-sans-sucre.png",
+      image: `${process.env.PUBLIC_URL}/Coca-Cola-sans-sucre.png`,
       title: "Coca-Cola Zéro",
       brand: "COCA-COLA",
       quantity: "33cl et 50cl",
     },
     {
       id: 3,
-      image: "/San-Pellegrino-NATURE.png",
+      image: `${process.env.PUBLIC_URL}/San-Pellegrino-NATURE.png`,
       title: "San Pellegrino Gazeuse",
       brand: "SAN PELLEGRINO",
       quantity: "50cl",
     },
     {
       id: 4,
-      image: "/cristaline-fruits-rouges.png",
+      image: `${process.env.PUBLIC_URL}/cristaline-fruits-rouges.png`,
       title: "Cristalline Fruits Rouges",
       brand: "CRISTALLINE",
       quantity: "33cl et 50cl",
     },
     {
       id: 5,
-      image: "/kinder-bueno.png",
+      image: `${process.env.PUBLIC_URL}/kinder-bueno.png`,
       title: "Kinder Bueno",
       brand: "FERRERO",
       quantity: "(Carton de 30)",
     },
     {
       id: 6,
-      image: "/lays-bbq.png",
+      image: `${process.env.PUBLIC_URL}/lays-bbq.png`,
       title: "Chips Lay's Barbecue",
       brand: "LAY'S",
       quantity: "(Carton de 20)",
     },
     {
       id: 7,
-      image: "/haribo-dragibus.webp",
+      image: `${process.env.PUBLIC_URL}/haribo-dragibus.webp`,
       title: "Haribo Dragibus",
       brand: "HARIBO",
       quantity: "(Carton de 24)",
     },
     {
       id: 8,
-      image: "/lutti-best-fizz.webp",
+      image: `${process.env.PUBLIC_URL}/lutti-best-fizz.webp`,
       title: "Best Fizz",
       brand: "LUTTI",
       quantity: "(Boîte de 1kg)",
     },
-  ];
+];
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans">
@@ -153,14 +153,14 @@ const ProductCatalogue = () => {
           
           {/* Banner San Pellegrino */}
           <div className="mt-8">
-            <Banner 
-              title="DÉCOUVREZ"
-              subtitle="LA GAMME SAN PELEGRINO"
-              buttonText="Découvrir"
-              bgColor="bg-gray-100"
-              textColor="text-teal-600"
-              image="/san-pe.png"
-            />
+          <Banner 
+            title="DÉCOUVREZ"
+            subtitle="LA GAMME SAN PELEGRINO"
+            buttonText="Découvrir"
+            bgColor="bg-gray-100"
+            textColor="text-teal-600"
+            image={`${process.env.PUBLIC_URL}/san-pe.png`} 
+          />
           </div>
         </div>
         
@@ -190,7 +190,7 @@ const ProductCatalogue = () => {
           <div className="mt-12">
             <div className="relative overflow-hidden rounded-lg shadow-xl">
               <img
-                src="/products.jpeg"
+                src={`${process.env.PUBLIC_URL}/products.jpeg`}
                 alt="Produits du Monde"
                 className="w-full h-80 object-cover object-center transform hover:scale-105 transition-transform duration-700"
               />
