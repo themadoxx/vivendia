@@ -12,9 +12,9 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/fournisseur/login" element={<SupplierLogin />} />
           {/* Ajoutez d'autres routes au besoin */}
-          <Route path="/fournisseur/dashboard" element={<div>Dashboard Page (À créer)</div>} />
-          <Route path="/fournisseur/inscription" element={<div>Inscription Page (À créer)</div>} />
-          <Route path="/reset-password" element={<div>Reset Password Page (À créer)</div>} />
+          <Route path="/fournisseur/dashboard" element={<div>Dashboard Page</div>} />
+          <Route path="/fournisseur/inscription" element={<div>Inscription Page </div>} />
+          <Route path="/reset-password" element={<div>Reset Password Page</div>} />
         </Routes>
       </HashRouter>
     </div>
