@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/themadoxx/vivendia.git/static/css/main.053ed5f2.css",
-    "main.js": "/themadoxx/vivendia.git/static/js/main.a14527d7.js",
-    "static/js/453.a8616691.chunk.js": "/themadoxx/vivendia.git/static/js/453.a8616691.chunk.js",
-    "static/media/confiserie-snack.png": "/themadoxx/vivendia.git/static/media/confiserie-snack.5ad8b8e37c70ca7bbdbd.png",
-    "index.html": "/themadoxx/vivendia.git/index.html",
-    "main.053ed5f2.css.map": "/themadoxx/vivendia.git/static/css/main.053ed5f2.css.map",
-    "main.a14527d7.js.map": "/themadoxx/vivendia.git/static/js/main.a14527d7.js.map",
-    "453.a8616691.chunk.js.map": "/themadoxx/vivendia.git/static/js/453.a8616691.chunk.js.map"
+    "main.css": "/themadoxx/vivendia/static/css/main.35cc497d.css",
+    "main.js": "/themadoxx/vivendia/static/js/main.469606bc.js",
+    "static/js/453.a8616691.chunk.js": "/themadoxx/vivendia/static/js/453.a8616691.chunk.js",
+    "static/media/confiserie-snack.png": "/themadoxx/vivendia/static/media/confiserie-snack.5ad8b8e37c70ca7bbdbd.png",
+    "index.html": "/themadoxx/vivendia/index.html",
+    "main.35cc497d.css.map": "/themadoxx/vivendia/static/css/main.35cc497d.css.map",
+    "main.469606bc.js.map": "/themadoxx/vivendia/static/js/main.469606bc.js.map",
+    "453.a8616691.chunk.js.map": "/themadoxx/vivendia/static/js/453.a8616691.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.053ed5f2.css",
-    "static/js/main.a14527d7.js"
+    "static/css/main.35cc497d.css",
+    "static/js/main.469606bc.js"
   ]
 }
