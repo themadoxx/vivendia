@@ -1,10 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+
+const heroBg = `${process.env.PUBLIC_URL}/hero.png`;
+
+
 const HeroBanner = () => {
   return (
     <div className="relative w-full h-[90vh] flex items-center justify-center bg-cover bg-center" 
-         style={{ backgroundImage: "url('/hero.png')" }}> 
+    style={{ backgroundImage: `url(${heroBg})` }}> 
       
       {/* Overlay sombre pour lisibilité */}
       <div className="absolute inset-0 bg-black/40"></div>
