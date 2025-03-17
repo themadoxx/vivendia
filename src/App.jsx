@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Landing from './Pages/Landing';
 import SupplierLogin from './components/Login/Login';
@@ -7,8 +7,8 @@ import SupplierLogin from './components/Login/Login';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
+      <HashRouter>
+          <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/fournisseur/login" element={<SupplierLogin />} />
           {/* Ajoutez d'autres routes au besoin */}
@@ -16,7 +16,7 @@ function App() {
           <Route path="/fournisseur/inscription" element={<div>Inscription Page (À créer)</div>} />
           <Route path="/reset-password" element={<div>Reset Password Page (À créer)</div>} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
