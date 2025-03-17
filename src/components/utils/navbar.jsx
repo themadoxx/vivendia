@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import { ChevronDown } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,6 +43,12 @@ const Navbar = () => {
                 NOUS CONTACTER
               </a>
             </li>
+            <Link 
+            to="/fournisseur/login" 
+            className="bg-[#C4392D] text-white py-2 px-4 rounded hover:bg-[#a52e23] transition-colors duration-300"
+          >
+            Connexion Fournisseur
+          </Link>
           </ul>
         </div>
 
