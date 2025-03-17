@@ -223,7 +223,7 @@ const BestSellersSection = () => {
             
             {/* Grille de produits avec rangées de 4 produits */}
             <div className="border rounded-lg overflow-hidden">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {bestSellerProducts.map((product, index) => (
                   <div key={product.id} className={`border-b ${index % 4 === 3 ? 'lg:border-r-0' : 'lg:border-r'} ${index % 2 === 1 ? 'sm:border-r-0' : 'sm:border-r'} ${index >= bestSellerProducts.length - 4 ? 'lg:border-b-0' : ''} ${index >= bestSellerProducts.length - 2 ? 'sm:border-b-0 sm:lg:border-b' : ''}`}>
                     <ProductCard
