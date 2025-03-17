@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Eye, EyeOff, ArrowRight, AlertCircle, CheckCircle } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom'; // Pour React Router
+// Pour Next.js, utilisez plutôt:
+// import Link from 'next/link';
+// import { useRouter } from 'next/router';
 
 const SupplierLogin = () => {
   const [email, setEmail] = useState('');
@@ -10,6 +14,11 @@ const SupplierLogin = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
+  
+  // Pour React Router
+  const navigate = useNavigate();
+  // Pour Next.js, utilisez:
+  // const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -28,9 +37,12 @@ const SupplierLogin = () => {
       // Logique de validation à implémenter avec votre API
       if (email === 'demo@vivendia.com' && password === 'password') {
         setSuccess(true);
-        // Redirection après 1 seconde
+        
+        // Redirection avec React Router après 1 seconde
         setTimeout(() => {
-          window.location.href = '/fournisseur/dashboard';
+          navigate('/fournisseur/dashboard');
+          // Pour Next.js, utilisez:
+          // router.push('/fournisseur/dashboard');
         }, 1000);
       } else {
         setError('Identifiants incorrects. Veuillez réessayer.');
@@ -62,11 +74,14 @@ const SupplierLogin = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <img
-          className="mx-auto h-12 w-auto"
-          src="/vivendia-logo.svg"
-          alt="Vivendia"
-        />
+        <Link to="/" className="flex justify-center"> {/* Pour React Router */}
+        {/* Pour Next.js: <Link href="/" className="flex justify-center"> */}
+          <img
+            className="h-12 w-auto"
+            src="/vivendia-logo.svg"
+            alt="Vivendia"
+          />
+        </Link>
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
           Espace Fournisseurs
         </h2>
@@ -183,9 +198,10 @@ const SupplierLogin = () => {
               </div>
 
               <div className="text-sm">
-                <a href="/reset-password" className="font-medium text-[#C4392D] hover:text-[#a52e23]">
+                <Link to="/reset-password" className="font-medium text-[#C4392D] hover:text-[#a52e23]">
+                {/* Pour Next.js: <Link href="/reset-password" className="font-medium text-[#C4392D] hover:text-[#a52e23]"> */}
                   Mot de passe oublié?
-                </a>
+                </Link>
               </div>
             </motion.div>
 
@@ -220,12 +236,13 @@ const SupplierLogin = () => {
             </div>
 
             <div className="mt-6">
-              <a
-                href="/fournisseur/inscription"
+              <Link
+                to="/fournisseur/inscription"
                 className="w-full flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#C4392D]"
               >
+              {/* Pour Next.js: <Link href="/fournisseur/inscription" className="..."> */}
                 Demander un accès fournisseur
-              </a>
+              </Link>
             </div>
           </motion.div>
           
