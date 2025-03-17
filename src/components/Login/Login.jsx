@@ -78,7 +78,7 @@ const SupplierLogin = () => {
         {/* Pour Next.js: <Link href="/" className="flex justify-center"> */}
           <img
             className="h-12 w-auto"
-            src="/vivendia-logo.svg"
+            src={`${process.env.PUBLIC_URL}/vivendia-logo.svg`}
             alt="Vivendia"
           />
         </Link>
