@@ -202,9 +202,9 @@ const BestSellersSection = () => {
         {/* Bannière promotionnelle - maintenant à la même taille qu'avant */}
         <div className="lg:col-span-1 text-left">
         <PromoBanner 
-          title="Exclusive - Ideal for events, restaurants, and hotels"
+          title="Exclusivité"
           subtitle="NOUVEAU DORITOS SWEET CHILI"
-          description="Available in several packaging"
+          description="Découvrez la nouvelle saveur Doritos Sweet Chili, un mélange épicé et sucré pour une expérience unique."
           buttonText="Découvrir"
           image={`${process.env.PUBLIC_URL}/doritos-sweet-chili.png`}  
         />
