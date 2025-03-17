@@ -7,7 +7,7 @@ const VivendiaComponent = () => {
         {/* Image principale */}
         <div className="order-1 lg:order-1">
           <img 
-            src="/distrib.png" 
+            src={`${process.env.PUBLIC_URL}/distrib.png`}
             alt="Boissons dans un distributeur automatique" 
             className="w-full rounded-lg shadow-md"
           />
