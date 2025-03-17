@@ -1,0 +1,148 @@
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-items ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .menu-items li {
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .dropdown {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-arrow {
+    font-size: 10px;
+    margin-left: 4px;
+    color: #666;
+  }
+  
+  .menu-items a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    padding: 8px 5px;
+    transition: color 0.3s;
+  }
+  
+  .menu-items a:hover {
+    color: #C4392D;
+  }
+  
+  .contact-button a {
+    background-color: #C4392D;
+    color: white !important;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-button a:hover {
+    background-color: #a52e23;
+  }
+  
+  .burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .burger-bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .burger-bar.open:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+  
+  .burger-bar.open:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger-bar.open:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+  }
+  
+  @media (max-width: 992px) {
+    .burger-menu {
+      display: flex;
+      z-index: 1001;
+    }
+  
+    .menu-items {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      height: 100vh;
+      width: 250px;
+      background-color: white;
+      padding-top: 80px;
+      transition: right 0.3s ease;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .menu-items.active {
+      right: 0;
+    }
+  
+    .menu-items ul {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 20px;
+    }
+  
+    .menu-items li {
+      margin: 10px 0;
+      width: 100%;
+    }
+  
+    .dropdown {
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .contact-button {
+      margin-top: 20px;
+    }
+  
+    .contact-button a {
+      display: inline-block;
+    }
+  }
