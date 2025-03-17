@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/login" element={<SupplierLogin />} />
+          <Route path="/fournisseur/login" element={<SupplierLogin />} />
           {/* Ajoutez d'autres routes au besoin */}
           <Route path="/fournisseur/dashboard" element={<div>Dashboard Page (À créer)</div>} />
           <Route path="/fournisseur/inscription" element={<div>Inscription Page (À créer)</div>} />
