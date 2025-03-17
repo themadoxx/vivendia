@@ -242,20 +242,21 @@ const BestSellersSection = () => {
       
       {/* Catégories spéciales */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 text-left">
-        <CategoryCard 
-          title="Notre sélection"
-          subtitle="Cafés & Chocolats"
-          description="Du café finement selectionné"
-          buttonText="Découvrir"
-          image="/cafe-distri.jpg"
-        />
-        <CategoryCard 
-          title="Offres spéciales"
-          subtitle="Bio et diététique"
-          description="Des produits sains et équilibrés"
-          buttonText="Découvrir"
-          image="/bio-diet.jpg"
-        />
+      <CategoryCard 
+        title="Notre sélection"
+        subtitle="Cafés & Chocolats"
+        description="Du café finement sélectionné"
+        buttonText="Découvrir"
+        image={`${process.env.PUBLIC_URL}/cafe-distri.jpg`} 
+      />
+
+      <CategoryCard 
+        title="Offres spéciales"
+        subtitle="Bio et diététique"
+        description="Des produits sains et équilibrés"
+        buttonText="Découvrir"
+        image={`${process.env.PUBLIC_URL}/bio-diet.jpg`}  
+      />
       </div>
       
       {/* Sections de texte */}

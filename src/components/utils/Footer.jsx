@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="mb-8">
             <div className="flex items-center">
               <div className="mr-2">
-               <img src="/vivendia-white.svg" alt="Vivendia" />
+              <img src={`${process.env.PUBLIC_URL}/vivendia-white.svg`} alt="Vivendia" />
               </div>
             </div>
           </div>

@@ -12,7 +12,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center">
           <a href="/">
-            <img src="/vivendia-logo.svg" alt="Vivendia" />
+          <img src={`${process.env.PUBLIC_URL}/vivendia-logo.svg`} alt="Vivendia" />
           </a>
         </div>
 
