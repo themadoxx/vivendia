@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/vivendia/static/css/main.2f7ec814.css",
-    "main.js": "/vivendia/static/js/main.d06e9683.js",
+    "main.css": "/vivendia/static/css/main.8023f7c2.css",
+    "main.js": "/vivendia/static/js/main.4ea18d40.js",
     "static/js/453.a8616691.chunk.js": "/vivendia/static/js/453.a8616691.chunk.js",
     "static/media/confiserie-snack.png": "/vivendia/static/media/confiserie-snack.5ad8b8e37c70ca7bbdbd.png",
     "index.html": "/vivendia/index.html",
-    "main.2f7ec814.css.map": "/vivendia/static/css/main.2f7ec814.css.map",
-    "main.d06e9683.js.map": "/vivendia/static/js/main.d06e9683.js.map",
+    "main.8023f7c2.css.map": "/vivendia/static/css/main.8023f7c2.css.map",
+    "main.4ea18d40.js.map": "/vivendia/static/js/main.4ea18d40.js.map",
     "453.a8616691.chunk.js.map": "/vivendia/static/js/453.a8616691.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f7ec814.css",
-    "static/js/main.d06e9683.js"
+    "static/css/main.8023f7c2.css",
+    "static/js/main.4ea18d40.js"
   ]
 }
